@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: 'Open Sans', sans-serif, Arial,sans-serif;
+    font-size: 16px;
+    .contenedor{
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    }
+header{
+    width: 100%;
+    background: url(../img/portada.jpeg),no-repeat #281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 600px;}
+    .contenedor{
+        position: relative;}
+    .menu-1{
+        width: 100%;
+        text-align: right;
+        a{
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 300;
+            display: inline-block;
+            margin: 40px 20px;
+            text-decoration: none;
+            position: relative;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .textos{
+        width: 100%;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        text-align: center;
+    .nombre{
+        font-size: 50px;
+        font-weight: 600;
+        margin-right: 30%;
+        span{
+            font-weight: 300;}
+            color: #000000;
+    }
+    h3{
+        font-weight: 300;
+        font-size: 25px;
+        font-style: italic;
+        margin-right: 10%;}
+    }
+.main{
+    background: url(../img/fondo-claro.png);
+    background: repeat;
+    .contenedor{
+        overflow: visible;
+        position: relative;
+        .foto{
+            width: 80%;
+            position: absolute;
+            left: 0;
+            top: -50px;
+            z-index: 0;
+            box-shadow: 0px 0px 15px rgba( #000000, 0.35);
+            img{
+                vertical-align: top;
+                width: 100%;
+            }
+    
+        }
+    }
+}
+.main .articulo{
+    background: #ffffff;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    // top: 500px;
+    top: 150px;
+    z-index: 1;
+    float: right;
+    box-shadow: 0px 0px 15px rgba( #000000, 0.35);
+    h3{
+        font-size: 50px;
+        font-weight: 300;
+        margin-bottom: 40px;}
+        p{
+            line-height: 20px;
+            margin-bottom: 15px;
+        }
+    
+}
+section .menu{
+    padding-top: 570px;
+    margin-bottom: 50px;
+    .titulo{
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .contenedor-menu{
+        border: 1px solid #000000;
+        background: transparent;
+        padding: 10px;
+        overflow: hidden;}
+    .contenedor-menu2{
+        border: 1px solid #000000;
+        background: transparent;
+        padding: 10px;
+        overflow: hidden;}
+}
+section article{
+    width: 50%;
+    float: left;
+    padding: 20px;}
+    .platillos{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 4px dashed #000000;
+        overflow: hidden;}
+    .categoria{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: center;}
+.nombre{
+    font-size: 20px;
+    margin-bottom: 5px;}
+.precio{
+    font-size: 20px;
+    align-self: flex-end;
+    }
+.descripcion{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #676767;
+}
+.main .galeria{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+    .foto{
+        width: 30%;
+        height: 300px;}
+        img:hover{
+            opacity: 0.9;
+            transition: all .3s ease;}
+.ubicacion{
+    background: #ffffff;
+    padding: 60px 0;
+    .titulo{
+        text-align: center;
+        color: #000000;
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 300;
+        margin-bottom: 40px;}
+        .direccion{
+            text-align: center;
+            p{
+                font-size: 16px;
+                margin: 10px;
+            }
+        }
+        .horarios{
+            text-align: center;
+            font-size: 16px;
+            h4{
+                font-size: 25px;
+                font-weight: 300;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            .finde-semana{
+                margin:auto
+            }
+            .dias{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }   p{
+                margin: 20px;
+                text-align: center;
+            }
+        }
+    .contenedor{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }    
+}
+section .mapa iframe {
+    width: 100%;
+    }
+
+    footer{
+        background: #000000;
+    }     
+
+    .copyright{
+        text-align: center;
+        padding: 15px 0;
+        color: #ffffff;
+    }                                        
+}
+
+@media screen and (max-width: 800px){
+   header .contenedor{
+       position: static;
+       height: auto;
+    }   
+    .menu-1{
+        text-align: center;
+        display: flex;
+        align-items: center;
+    } 
+      a{
+        margin: 10px 20px;
+      }
+
+       .textos{
+       position: static;
+       margin: 100px 0;
+       }
+       h3{
+           font-size: 18px;
+       
+        }
+    
+
+   
+
+}
